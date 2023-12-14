@@ -1,19 +1,21 @@
 import React from 'react';
 import PresentationTitleAndDecs from './PresentationTitleAndDecs';
-import PresentationContactLink from '../../Common/ContactMeButton';
-import PresentationImage from './PresentationImage';
+import Image from './Image';
 import data from '../../../data/data';
-import Circle from './Circle';
-import Rings from './Rings';
+import image from '../../../assets/images/image-profile-mobile.webp';
+import Circle from '../../Common/Circle';
+import Rings from '../../Common/Rings';
 
 const Presentation: React.FC = () => {
   return (
     <section>
-      <PresentationTitleAndDecs developerName={data.representation.developerName} />
-      <PresentationImage />
-      <PresentationContactLink />
-      <Circle position={'absolute lg:left-[766px] lg:top-[521px]'} />
-      <Rings position={'absolute lg:left-[-100px] lg:top-[133px]'} />
+      <Image image={image} />
+      <Rings position={'absolute right-48 top-32 z-[-1]'} /> {/*lg:left-[-100px] lg:top-[133px]*/}
+      <Circle position={'absolute left-80 top-64'} /> {/*lg:left-[766px] lg:top-[521px]*/}
+      <PresentationTitleAndDecs
+        developerName={data.representation.developerName}
+        description={data.representation.description}
+      />
     </section>
   );
 };

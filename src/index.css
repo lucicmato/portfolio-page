@@ -4,7 +4,14 @@
 
 @font-face {
   font-family: 'Space Grotesk';
-  src: url('assets/fonts/SpaceGrotesk-VariableFont_wght.ttf') format('ttf');
+  src:
+    url('assets/fonts/SpaceGrotesk-VariableFont_wght.ttf') format('ttf'),
+    url('assets/fonts/static/SpaceGrotesk-Bold.ttf') format('ttf'),
+    url('assets/fonts/static/SpaceGrotesk-Medium.ttf') format('ttf');
+}
+
+html {
+  overflow-x: hidden;
 }
 
 body {
@@ -12,4 +19,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   @apply bg-black;
   @apply text-white;
+}
+
+h2 {
+  @apply text-[2rem];
+  @apply font-bold;
+  @apply leading-10;
+  @apply -tracking-[0.0625rem];
 }

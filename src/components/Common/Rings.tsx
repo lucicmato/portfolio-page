@@ -1,6 +1,6 @@
 import React from 'react';
 
-import patternRings from '../../../assets/images/pattern-rings.svg';
+import patternRings from '../../assets/images/pattern-rings.svg';
 
 interface RingsProps {
   position: string;

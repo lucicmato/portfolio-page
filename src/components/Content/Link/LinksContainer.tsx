@@ -4,7 +4,7 @@ import data from '../../../data/data';
 
 const LinksContainer: React.FC = () => {
   return (
-    <div className="flex lg:pt-[43px]">
+    <div className="w-full flex justify-between">
       {data.links.map((link, index) => (
         <Link key={index} site={link.site} url={link.url} icon={link.icon} />
       ))}

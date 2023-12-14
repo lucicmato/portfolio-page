@@ -8,7 +8,7 @@ interface LinkProps {
 
 const Link: React.FC<LinkProps> = ({ site, url, icon }) => {
   return (
-    <div className="lg:pr-[25px]">
+    <div>
       <a href={url}>
         <img src={icon} alt={site} />
       </a>

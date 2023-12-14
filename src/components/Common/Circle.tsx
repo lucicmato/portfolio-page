@@ -1,5 +1,5 @@
 import React from 'react';
-import patternCircle from '../../../assets/images/pattern-circle.svg';
+import patternCircle from '../../assets/images/pattern-circle.svg';
 
 interface CircleProps {
   position: string;
