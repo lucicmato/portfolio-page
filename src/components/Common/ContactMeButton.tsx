@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface ContactMeButtonProps {
-  position: string;
+  position?: string;
 }
 
 const ContactMeButton: React.FC<ContactMeButtonProps> = ({ position }) => {

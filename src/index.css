@@ -21,6 +21,13 @@ body {
   @apply text-white;
 }
 
+h1 {
+  @apply text-[2.5rem];
+  @apply font-bold;
+  @apply leading-10;
+  @apply -tracking-[0.0625rem];
+}
+
 h2 {
   @apply text-[2rem];
   @apply font-bold;

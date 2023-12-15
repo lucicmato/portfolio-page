@@ -3,14 +3,14 @@ import Presentation from '../Content/Presentation/Presentation';
 import Experience from '../Content/Experience/Experience';
 import Projects from '../Content/Projects/Projects';
 
-import { experience } from '../../data/data';
+import { experience, projects } from '../../data/data';
 
 const Content: React.FC = () => {
   return (
     <main>
       <Presentation />
       <Experience data={experience} />
-      <Projects />
+      <Projects projects={projects} />
       {/* <ContactForm /> */}
     </main>
   );

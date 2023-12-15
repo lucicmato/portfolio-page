@@ -1,7 +1,13 @@
 import githubIcon from '../assets/images/icon-github.svg';
 import facebookIcon from '../assets/images/icon-twitter.svg';
 import linkedInIcon from '../assets/images/icon-linkedin.svg';
-import { IExperience } from '../models/Models';
+import cPIHandler from '../assets/images/cpi-handler.jpg';
+import portfolioPage from '../assets/images/portfolio-page.jpg';
+
+import { Technology } from '../models/Enums';
+
+import { IExperience, IProject } from '../models/Models';
+
 export default {
   links: [
     { site: 'Facebook', url: 'https://www.facebook.com/', icon: facebookIcon },
@@ -16,11 +22,43 @@ export default {
 };
 
 export const experience: IExperience[] = [
-  { name: 'JavaScript', yearsOfExperience: 5 },
-  { name: 'ReactJS', yearsOfExperience: 3 },
-  { name: 'AngularJS', yearsOfExperience: 2 },
-  { name: 'HTML', yearsOfExperience: 5 },
-  { name: 'CSS', yearsOfExperience: 5 },
-  { name: 'SCSS', yearsOfExperience: 5 },
-  { name: 'Java', yearsOfExperience: 2.5 },
+  { name: Technology.JAVASCRIPT, yearsOfExperience: 5 },
+  { name: Technology.REACTJS, yearsOfExperience: 3 },
+  { name: Technology.ANGULARJS, yearsOfExperience: 2 },
+  { name: Technology.HTML, yearsOfExperience: 5 },
+  { name: Technology.CSS, yearsOfExperience: 5 },
+  { name: Technology.SCSS, yearsOfExperience: 5 },
+  { name: Technology.JAVA, yearsOfExperience: 2.5 },
+  { name: Technology.TILEWIND, yearsOfExperience: 1 },
+  { name: Technology.VITE, yearsOfExperience: 1 },
+  { name: Technology.REACTBOOTSTRAP, yearsOfExperience: 1 },
+];
+
+export const projects: IProject[] = [
+  {
+    src: portfolioPage,
+    name: 'Portfolio Page',
+    technology: [
+      Technology.JAVASCRIPT,
+      Technology.REACTJS,
+      Technology.HTML,
+      Technology.SCSS,
+      Technology.VITE,
+      Technology.TILEWIND,
+    ],
+    codeLink: 'https://github.com/lucicmato/portfolio-page',
+  },
+  {
+    src: cPIHandler,
+    name: 'CPI Handler',
+    technology: [
+      Technology.JAVASCRIPT,
+      Technology.REACTJS,
+      Technology.HTML,
+      Technology.SCSS,
+      Technology.VITE,
+      Technology.REACTBOOTSTRAP,
+    ],
+    codeLink: 'https://github.com/lucicmato/CPIHandler',
+  },
 ];

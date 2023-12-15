@@ -8,7 +8,7 @@ interface RingsProps {
 const Rings: React.FC<RingsProps> = ({ position }) => {
   return (
     <div>
-      <img src={patternRings} className={position} />
+      <img src={patternRings} className={position} loading="lazy"/>
     </div>
   );
 };

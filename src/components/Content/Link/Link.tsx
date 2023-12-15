@@ -10,7 +10,7 @@ const Link: React.FC<LinkProps> = ({ site, url, icon }) => {
   return (
     <div>
       <a href={url}>
-        <img src={icon} alt={site} />
+        <img src={icon} alt={site} loading="lazy"/>
       </a>
     </div>
   );

@@ -11,7 +11,7 @@ const PresentationTitleAndDesc: React.FC<PresentationTitleAndDescProps> = ({ dev
     <div className="px-4 pt-10">
       {/*lg:ml-[165px] lg:mt-[127px] lg:mr-[569px] lg:w-[706px] lg:h-[303px]*/}
 
-      <h1 className="text-4xl text-center -tracking-[0.071rem] font-bold">
+      <h1 className="text-center">
         {/*lg:text-hxl lg:tracking-tight font-bold leading-hxl*/}
         Nice to meet you! <br></br> I'm <u className="decoration-green underline-offset-4">{developerName}</u>.
         {/*lg:underline-offset-6 */}
