@@ -5,7 +5,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ children }) => {
-  return <div className="px-4 pt-10">{children}</div>;
+  return <div className="px-4 pt-12">{children}</div>;
 };
 
 export default ProjectCard;

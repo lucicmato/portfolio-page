@@ -1,10 +1,11 @@
 import React from 'react';
-import ContactMeButton from '../../Common/ContactMeButton';
+import BaseButton from '../../Common/BaseButton';
 import ProjectCard from './ProjectCard';
 import ProjectImg from './ProjectImg';
 import ProjectInfo from './ProjectInfo';
 
 import { IProject } from '../../../models/Models';
+import { BaseButtonText } from '../../../models/Enums';
 
 interface ProjectsProps {
   projects: IProject[];
@@ -14,15 +15,14 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
     <section>
       <div className="flex justify-between mx-4 mt-20">
         <h1>Projects</h1> {/**lg:text-hxl lg:tracking-tight font-bold leading-hxl */}
-        <ContactMeButton />
+        <BaseButton buttonText={BaseButtonText.CONTACTME} />
       </div>
       {projects.map((project) => (
         <ProjectCard>
           <ProjectImg imgSrc={project.src} />
-          <ProjectInfo
-            projectName={project.name}
-            projectTechnology={project.technology}
-          />
+          <ProjectInfo projectName={project.name} projectTechnology={project.technology} />
+          {project.projectDemoLink && <BaseButton buttonText={BaseButtonText.VIEWPROJECT} position="pt-5 pr-8" />}
+          {project.codeLink && <BaseButton buttonText={BaseButtonText.VIEWCODE} position="pt-5 pr-8" />}
         </ProjectCard>
       ))}
     </section>

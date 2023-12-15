@@ -1,5 +1,6 @@
 import React from 'react';
-import ContactButtonMe from '../../Common/ContactMeButton';
+import BaseButton from '../../Common/BaseButton';
+import { BaseButtonText } from '../../../models/Enums';
 
 interface PresentationTitleAndDescProps {
   developerName: string;
@@ -20,7 +21,7 @@ const PresentationTitleAndDesc: React.FC<PresentationTitleAndDescProps> = ({ dev
         <span className="text-grey leading-[162.5%] font-medium">{description}</span>
         {/*lg:text-lg font-medium leading-7*/}
       </div>
-      <ContactButtonMe position={'pt-6 w-full'} />
+      <BaseButton position={'pt-6 w-full'} buttonText={BaseButtonText.CONTACTME} />
     </div>
   );
 };

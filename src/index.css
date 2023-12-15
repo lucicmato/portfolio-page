@@ -10,6 +10,14 @@
     url('assets/fonts/static/SpaceGrotesk-Medium.ttf') format('ttf');
 }
 
+@layer utilities {
+  .font-custom-features {
+    font-feature-settings:
+      'clig' off,
+      'liga' off;
+  }
+}
+
 html {
   overflow-x: hidden;
 }

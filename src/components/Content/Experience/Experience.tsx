@@ -20,7 +20,9 @@ const Experience: React.FC<ExperienceProps> = ({ data }) => (
         {/*text-[48px] font-bold leading-14 tracking-tighter*/}
         <h2>{experience.name}</h2>
         {/**text-[18px] font-medium leading-7 bg-{grey}} */}
-        <span className="text-grey leading-[1.625rem] font-medium">{`${experience.yearsOfExperience} Years Experience`}</span>
+        <span className="text-grey leading-[1.625rem] font-medium">{`${experience.yearsOfExperience} ${
+          experience.yearsOfExperience !== 1 ? 'Years' : 'Year'
+        } Experience`}</span>
       </li>
     ))}
     {/**absolute lg:left-[1149px] */}
