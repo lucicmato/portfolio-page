@@ -18,7 +18,7 @@ const PresentationTitleAndDesc: React.FC<PresentationTitleAndDescProps> = ({ dev
         {/*lg:underline-offset-6 */}
       </h1>
       <div className="pt-5 text-center">
-        <span className="text-grey leading-[162.5%] font-medium">{description}</span>
+        <p className="">{description}</p>
         {/*lg:text-lg font-medium leading-7*/}
       </div>
       <BaseButton position={'pt-6 w-full'} buttonText={BaseButtonText.CONTACTME} />

@@ -42,3 +42,16 @@ h2 {
   @apply leading-10;
   @apply -tracking-[0.0625rem];
 }
+
+p {
+  @apply text-grey;
+  @apply leading-[162.5%];
+  @apply font-medium;
+}
+
+input,
+textarea {
+  @apply bg-blackBright;
+  @apply border-b;
+  @apply w-full;
+}

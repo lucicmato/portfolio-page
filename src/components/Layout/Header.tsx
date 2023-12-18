@@ -1,6 +1,6 @@
 import React from 'react';
-import Sign from '../Content/Sign';
-import LinksContainer from '../Content/Link/LinksContainer';
+import Sign from '../Common/Sign';
+import LinksContainer from '../Common/Link/LinksContainer';
 
 const Header: React.FC = () => {
   return (
