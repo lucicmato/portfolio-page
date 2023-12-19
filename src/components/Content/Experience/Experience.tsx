@@ -12,22 +12,23 @@ interface ExperienceProps {
 }
 
 const Experience: React.FC<ExperienceProps> = ({ data }) => (
-  <ul className="mx-4 mt-20 pt-10 pb-10 border-t border-b">
-    {data.map((experience) => (
-      //flex flex-col justify-center items-start gap-[14px] min-w-[345px]
-
-      <li className="flex flex-col justify-center items-center gap-px mb-6">
-        {/*text-[48px] font-bold leading-14 tracking-tighter*/}
-        <h2>{experience.name}</h2>
-        {/**text-[18px] font-medium leading-7 bg-{grey}} */}
-        <span className="text-grey leading-[1.625rem] font-medium">{`${experience.yearsOfExperience} ${
-          experience.yearsOfExperience !== 1 ? 'Years' : 'Year'
-        } Experience`}</span>
-      </li>
-    ))}
-    {/**absolute lg:left-[1149px] */}
-    <Rings position={'absolute left-[198px]'} />
-  </ul>
+  <section>
+    <ul className="mx-4 mt-20 pt-10 pb-10 border-t border-b">
+      {data.map((experience) => (
+        //flex flex-col justify-center items-start gap-[14px] min-w-[345px]
+        <li className="flex flex-col justify-center items-center gap-px pb-6">
+          {/*text-[48px] font-bold leading-14 tracking-tighter*/}
+          <h2>{experience.name}</h2>
+          {/**text-[18px] font-medium leading-7 bg-{grey}} */}
+          <span className="text-grey leading-[1.625rem] font-medium">{`${experience.yearsOfExperience} ${
+            experience.yearsOfExperience !== 1 ? 'Years' : 'Year'
+          } Experience`}</span>
+        </li>
+      ))}
+      {/**absolute lg:left-[1149px] */}
+      <Rings position={'absolute left-[198px]'} />
+    </ul>
+  </section>
 );
 
 export default Experience;

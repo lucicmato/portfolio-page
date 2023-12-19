@@ -14,7 +14,7 @@ const ProjectInfo: React.FC<ProjectInfoProps> = ({ projectName, projectTechnolog
       <p className="uppercase text-grey">
         {projectTechnology.map((technology) => {
           return (
-            <span className="mr-[1.125rem]" key={technology}>
+            <span className="pr-[1.125rem]" key={technology}>
               {technology}
             </span>
           );
