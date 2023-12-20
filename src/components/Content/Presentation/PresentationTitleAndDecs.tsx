@@ -9,9 +9,8 @@ interface PresentationTitleAndDescProps {
 
 const PresentationTitleAndDesc: React.FC<PresentationTitleAndDescProps> = ({ developerName, description }) => {
   return (
-    <div className="px-4 pt-10">
+    <div className="flex flex-wrap justify-center pt-10 px-4 md:px-8 md:pt-[5.625rem]">
       {/*lg:ml-[165px] lg:mt-[127px] lg:mr-[569px] lg:w-[706px] lg:h-[303px]*/}
-
       <h1 className="text-center">
         {/*lg:text-hxl lg:tracking-tight font-bold leading-hxl*/}
         Nice to meet you! <br></br> I'm <u className="decoration-green underline-offset-4">{developerName}</u>.
