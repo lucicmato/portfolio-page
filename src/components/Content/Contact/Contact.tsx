@@ -13,7 +13,7 @@ const Contact: React.FC = () => {
       <div className="pt-[3.125rem] pb-[6.1875rem]">
         <ContactForm />
       </div>
-      <Rings position={'absolute right-48 end-[318px] z-[1]'} />
+      <Rings position={'absolute right-[calc(100vw-45%)] z-[1]'} />
       <hr />
     </section>
   );

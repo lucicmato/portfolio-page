@@ -26,7 +26,7 @@ const Experience: React.FC<ExperienceProps> = ({ data }) => (
         </li>
       ))}
       {/**absolute lg:left-[1149px] */}
-      <Rings position={'absolute left-[198px]'} />
+      <Rings position={'absolute left-[calc(100vw-40%)]'} />
     </ul>
   </section>
 );
