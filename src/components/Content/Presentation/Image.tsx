@@ -6,8 +6,8 @@ import imageXl from '../../../assets/images/Mato-profile-desktop.png';
 
 const Image: React.FC = () => {
   return (
-    <div className="flex justify-center md:justify-end pt-10">
-      <picture>
+    <div className="flex justify-center pt-10 md:justify-end ">
+      <picture className=' h-full'>
         <source srcSet={imageXl} media="(min-width: 1280px)" />
         <source srcSet={imageMd}  media="(min-width: 768px)" />
         <img className="h-[383px] md:h-[600px] md:max-w-[40vw]" src={imageMob} alt="Mato Lučić" loading="lazy" />

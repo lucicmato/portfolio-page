@@ -30,10 +30,10 @@ body {
 }
 
 h1 {
-  @apply text-[2.5rem];
+  @apply text-[2.5rem]; 
   @apply font-bold;
   @apply leading-10;
-  @apply -tracking-[0.0625rem];
+  @apply -tracking-[0.0625rem]; 
 }
 
 h2 {
@@ -54,4 +54,13 @@ textarea {
   @apply bg-blackBright;
   @apply border-b;
   @apply w-full;
+}
+ 
+/*custom*/
+@media (min-width: 768px) {
+  .md\:hxl {
+    @apply text-customXL-h1; 
+    @apply leading-[100%];
+    @apply -tracking-customXL-h1
+  }
 }

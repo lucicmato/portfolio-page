@@ -11,6 +11,12 @@ export const theme = {
       xl: '1440px',
       ..._screens,
     },
+    fontSize: {
+      'customXL-h1': '5.5rem',
+    },
+    letterSpacing:{
+      'customXL-h1': '-2.5px'
+    }
   },
   fontFamily: {
     sans: ['"Space Grotesk"'],
