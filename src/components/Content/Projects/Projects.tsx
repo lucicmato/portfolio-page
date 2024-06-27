@@ -17,6 +17,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
         <h1>Projects</h1> {/**lg:text-hxl lg:tracking-tight font-bold leading-hxl */}
         <BaseButton buttonText={BaseButtonText.CONTACTME} />
       </div>
+      <div className='flex flex-col items-center md:flex-row'>
       {projects.map((project) => (
         <ProjectCard>
           <ProjectImg imgSrc={project.src} />
@@ -25,6 +26,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
           {project.codeLink && <BaseButton buttonText={BaseButtonText.VIEWCODE} position="pt-5 pr-8" />}
         </ProjectCard>
       ))}
+    </div>
     </section>
   );
 };

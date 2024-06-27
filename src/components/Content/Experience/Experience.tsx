@@ -13,10 +13,10 @@ interface ExperienceProps {
 
 const Experience: React.FC<ExperienceProps> = ({ data }) => (
   <section>
-    <ul className="mx-4 mt-20 pt-10 pb-10 border-t border-b md:columns-2">
+    <ul className="mx-4 mt-20 pt-10 pb-10 border-t border-b md:border-b-0 md:columns-2">
       {data.map((experience) => (
         //flex flex-col justify-center items-start gap-[14px] min-w-[345px]
-        <li className="flex flex-col justify-center items-center gap-px pb-6 md:pt-4">
+        <li className="flex flex-col justify-center items-center gap-px pb-6 md:pt-4 md:items-start">
           {/*text-[48px] font-bold leading-14 tracking-tighter*/}
           <h2>{experience.name}</h2>
           {/**text-[18px] font-medium leading-7 bg-{grey}} */}
