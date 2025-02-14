@@ -3,64 +3,64 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Space Grotesk';
-  src:
-    url('assets/fonts/SpaceGrotesk-VariableFont_wght.ttf') format('ttf'),
+    font-family: 'Space Grotesk';
+    src: url('assets/fonts/SpaceGrotesk-VariableFont_wght.ttf') format('ttf'),
     url('assets/fonts/static/SpaceGrotesk-Bold.ttf') format('ttf'),
     url('assets/fonts/static/SpaceGrotesk-Medium.ttf') format('ttf');
 }
 
 @layer utilities {
-  .font-custom-features {
-    font-feature-settings:
-      'clig' off,
-      'liga' off;
-  }
+    .font-custom-features {
+        font-feature-settings: 'clig' off,
+        'liga' off;
+    }
 }
 
 html {
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  @apply bg-black;
-  @apply text-white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @apply bg-black;
+    @apply text-white;
 }
 
 h1 {
-  @apply text-[2.5rem]; 
-  @apply font-bold;
-  @apply leading-10;
-  @apply -tracking-[0.0625rem]; 
+    @apply text-h1;
+    @apply font-h1;
+    @apply -tracking-h1;
 }
 
 h2 {
-  @apply text-[2rem];
-  @apply font-bold;
-  @apply leading-10;
-  @apply -tracking-[0.0625rem];
+    @apply text-h2;
+    @apply font-h2;
+    @apply -tracking-h2;
+
+}
+
+h3 {
+    @apply text-h3;
+    @apply font-h3;
 }
 
 p {
-  @apply text-grey;
-  @apply leading-[162.5%];
-  @apply font-medium;
+    @apply text-grey;
+    @apply font-p;
+    @apply text-p;
 }
 
 input,
 textarea {
-  @apply bg-blackBright;
-  @apply border-b;
-  @apply w-full;
+    @apply bg-blackBright;
+    @apply border-b;
+    @apply w-full;
 }
- 
+
 /*custom*/
 @media (min-width: 768px) {
-  .md\:hxl {
-    @apply text-customXL-h1; 
-    @apply leading-[100%];
-    @apply -tracking-customXL-h1
-  }
+    .md\:hxl {
+        @apply leading-[100%];
+    }
 }

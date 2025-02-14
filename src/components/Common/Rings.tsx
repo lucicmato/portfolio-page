@@ -5,12 +5,9 @@ import patternRings from '../../assets/images/pattern-rings.svg';
 interface RingsProps {
   position: string;
 }
+
 const Rings: React.FC<RingsProps> = ({ position }) => {
-  return (
-    <div>
-      <img src={patternRings} className={position} loading="lazy"/>
-    </div>
-  );
+  return <img src={patternRings} alt="ring" className={position} loading="lazy" />;
 };
 
 export default Rings;

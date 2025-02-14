@@ -1,8 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
-import { screens as _screens } from 'tailwindcss/defaultTheme'; //check it
+import { screens as _screens } from 'tailwindcss/defaultTheme';
 
-// eslint-disable-next-line no-undef
 export const content = ['./src/**/*.{ts,tsx}', './index.html'];
 export const theme = {
   extend: {
@@ -11,18 +10,25 @@ export const theme = {
       xl: '1440px',
       ..._screens,
     },
-    fontSize: {
-      'customXL-h1': '5.5rem',
+    fontFamily: {
+      sans: ['"Space Grotesk"'],
     },
-    letterSpacing:{
-      'customXL-h1': '-2.5px'
-    }
-  },
-  fontFamily: {
-    sans: ['"Space Grotesk"'],
-  },
-  letterSpacing: {
-    tight: '-2.5px',
+    fontSize: {
+      h1: ['88px', '88px'],
+      h2: ['48px', '56px'],
+      h3: ['24px', '32px'],
+      p: ['18px', '28px'],
+    },
+    fontWeight: {
+      h1: '700', // Bold
+      h2: '700', // Bold
+      h3: '700', // Bold
+      p: '500', // Medium
+    },
+    letterSpacing: {
+      h1: '-0.156rem', // -2.5px
+      h2: '-0.09375rem', // -1.5px
+    },
   },
   colors: {
     black: '#151515',

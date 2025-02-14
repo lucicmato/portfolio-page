@@ -1,6 +1,7 @@
 export enum Technology {
   JAVASCRIPT = 'JavaScript',
   REACTJS = 'ReactJS',
+  NEXTJS = 'NextJs',
   ANGULARJS = 'AngularJS',
   ANGULAR = 'Angular',
   HTML = 'HTML',
@@ -11,6 +12,17 @@ export enum Technology {
   REACTBOOTSTRAP = 'React-Bootstrap',
   VITE = 'Vite',
   TILEWIND = 'TileWind',
+  FIGMA = 'Figma',
+  MATERIALUI = 'MaterialUI',
+  WORDPRESS = 'Wordpress',
+  ELEMENTOR = 'Elementor',
+  DATABASES = 'Databases',
+  C = 'C#',
+  MONGODB = 'MongoDB',
+  NODEJS = 'NodeJS',
+  EXPRESSJS = 'ExpressJs',
+  MERN = 'MERN Stack',
+  GIT = 'GIT',
 }
 
 export enum BaseButtonText {

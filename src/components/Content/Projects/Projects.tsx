@@ -1,32 +1,46 @@
 import React from 'react';
+
 import BaseButton from '../../Common/BaseButton';
 import ProjectCard from './ProjectCard';
 import ProjectImg from './ProjectImg';
 import ProjectInfo from './ProjectInfo';
 
-import { IProject } from '../../../models/Models';
+import { Project } from '../../../models/Models';
 import { BaseButtonText } from '../../../models/Enums';
 
 interface ProjectsProps {
-  projects: IProject[];
+  projects: Project[];
 }
+
 const Projects: React.FC<ProjectsProps> = ({ projects }) => {
   return (
-    <section className="px-4 mt-20 pb-[5.75rem]">
-      <div className="flex justify-between ">
-        <h1>Projects</h1> {/**lg:text-hxl lg:tracking-tight font-bold leading-hxl */}
+    <section className="mt-20 pb-[6rem]">
+      <div className="flex justify-between">
+        <h2>Projects</h2>
         <BaseButton buttonText={BaseButtonText.CONTACTME} />
       </div>
-      <div className='flex flex-col items-center md:flex-row'>
-      {projects.map((project) => (
-        <ProjectCard>
-          <ProjectImg imgSrc={project.src} />
-          <ProjectInfo projectName={project.name} projectTechnology={project.technology} />
-          {project.projectDemoLink && <BaseButton buttonText={BaseButtonText.VIEWPROJECT} position="pt-5 pr-8" />}
-          {project.codeLink && <BaseButton buttonText={BaseButtonText.VIEWCODE} position="pt-5 pr-8" />}
-        </ProjectCard>
-      ))}
-    </div>
+      <div className="flex flex-col items-center mx-4 md:grid md:grid-cols-2 md:gap-4 md:items-start">
+        {projects.map((project: Project, index: number) => (
+          <ProjectCard key={index}>
+            <ProjectImg imgSrc={project.src} demoLink={project.projectDemoLink} codeLink={project.codeLink} />
+            <ProjectInfo projectName={project.name} projectTechnology={project.technology} />
+            {project.projectDemoLink && (
+              <BaseButton
+                buttonText={BaseButtonText.VIEWPROJECT}
+                increaseCss="pt-5 pr-8 xl:hidden"
+                projectLink={project.projectDemoLink}
+              />
+            )}
+            {project.codeLink && (
+              <BaseButton
+                buttonText={BaseButtonText.VIEWCODE}
+                increaseCss="pt-5 pr-8 xl:hidden"
+                codeLink={project.codeLink}
+              />
+            )}
+          </ProjectCard>
+        ))}
+      </div>
     </section>
   );
 };
