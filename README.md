@@ -1,4 +1,6 @@
-# Getting Started with Create React App -- DEP
+**This project is a React-based application developed from scratch, following a Figma design. It demonstrates modern web development techniques, React best practices, and a well-structured design system using Tailwind CSS for styling.
+**
+# Getting Started with Create React App 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
