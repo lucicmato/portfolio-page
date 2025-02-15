@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
         I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you
         as soon as possible.
       </p>
-      <div className="pt-[3.125rem] pb-[6rem] md:px-40">
+      <div className="pt-[3.125rem] pb-[6rem] md:px-40 xl:px-80">
         <ContactForm />
         <Rings position={'absolute right-[calc(100vw-45%)] z-[1] md:right-[calc(100vw-25%)]'} />
       </div>
