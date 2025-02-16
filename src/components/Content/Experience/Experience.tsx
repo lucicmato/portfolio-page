@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { Experience } from '../../../models/Models';
-import Rings from '../../Common/Rings';
 
 interface ExperienceProps {
   data: Experience[];
@@ -22,7 +21,7 @@ const Experience: React.FC<ExperienceProps> = ({ data }) => (
         ))}
       </ul>
     </section>
-    <Rings position={'absolute left-[calc(100vw-50%)] md:left-[calc(100vw-30%)] xl:left-[calc(100vw-20%)]'} />
+    {/* <Rings position={'absolute left-[calc(100vw-50%)] md:left-[calc(100vw-30%)] xl:left-[calc(100vw-20%)]'} />*/}
   </>
 );
 

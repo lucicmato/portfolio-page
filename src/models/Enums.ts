@@ -9,7 +9,7 @@ export enum Technology {
   SCSS = 'SCSS',
   JAVA = 'Java',
   BOOTSTRAP = 'Bootstrap',
-  REACTBOOTSTRAP = 'React-Bootstrap',
+  REACTBOOTSTRAP = 'R-Bootstrap',
   VITE = 'Vite',
   TILEWIND = 'TileWind',
   FIGMA = 'Figma',
@@ -21,7 +21,7 @@ export enum Technology {
   MONGODB = 'MongoDB',
   NODEJS = 'NodeJS',
   EXPRESSJS = 'ExpressJs',
-  MERN = 'MERN Stack',
+  MERN = 'MERN',
   GIT = 'GIT',
 }
 
