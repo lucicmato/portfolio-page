@@ -17,8 +17,8 @@ export default {
     developerName: 'Mato Lučić',
     description:
       'I am a passionate frontend/full-stack developer with a strong foundation in HTML, CSS, JavaScript (ReactJs/NextJs), Wordpress, Java and associated tools and technologies for application development.\n' +
-      'I graduated as a Master of Computer Engineering. Most of my experience was creation business applications and web pages. ' +
-      'I am great problem solver. My passion is bring websites and web applications to life with up-to-date technologies and best practices to create responsive, and user-friendly super cool interfaces. ',
+      'I graduated at the Faculty of Electrical Engineering with a degree in Computer Engineering. Most of my experience focuses on creating business applications and web pages. ' +
+      'I am a great problem solver. My passion is bringing websites and web applications to life with up-to-date technologies and best practices to create responsive, and user-friendly interfaces. ',
   },
 };
 
