@@ -112,6 +112,7 @@ export const projects: Project[] = [
       Technology.TILEWIND,
     ],
     projectDemoLink: 'https://sweet-project-2j6wchowm-mato-lucics-projects.vercel.app/',
+    codeLink: 'https://github.com/lucicmato/sweet-project',
   },
 ];
 
