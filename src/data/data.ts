@@ -4,6 +4,7 @@ import cPIHandler from '../assets/images/cpi-handler.jpg';
 import portfolioPage from '../assets/images/portfolio-page.jpg';
 import gerArticlesPractice from '../assets/images/ger-arcticles-practice.jpg';
 import fitPhisioLn from '../assets/images/FitPhisioLn.png';
+import logoSlatkoITocka from '../assets/images/logo-slatko-i-tocka.png';
 
 import { Technology } from '../models/Enums';
 import { Experience, Project } from '../models/Models';
@@ -97,6 +98,20 @@ export const projects: Project[] = [
     name: 'FitPhysioLN',
     technology: [Technology.WORDPRESS, Technology.ELEMENTOR, Technology.JAVASCRIPT],
     projectDemoLink: 'https://fitphysioln.com/',
+  },
+  {
+    src: logoSlatkoITocka,
+    name: 'Slatko-i-Tocka',
+    technology: [
+      Technology.CSS,
+      Technology.GIT,
+      Technology.NEXTJS,
+      Technology.HTML,
+      Technology.JAVASCRIPT,
+      Technology.REACTJS,
+      Technology.TILEWIND,
+    ],
+    projectDemoLink: 'https://sweet-project-2j6wchowm-mato-lucics-projects.vercel.app/',
   },
 ];
 
