@@ -7,7 +7,7 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ children }) => {
   return (
     <div
-      className={`pt-12 w-full z-10 md:flex md:flex-col md:justify-between md:h-full xl:flex xl:flex-col xl:justify-between xl:h-full`}
+      className={`pt-12 w-full z-10 md:flex md:flex-col md:h-full xl:flex xl:flex-col xl:h-full`}
     >
       {children}
     </div>

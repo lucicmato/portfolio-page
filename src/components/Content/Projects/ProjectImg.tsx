@@ -12,8 +12,8 @@ interface ProjectImgProps {
 
 const ProjectImg: React.FC<ProjectImgProps> = ({ imgSrc, demoLink, codeLink }) => {
   return (
-    <div className="relative min-h-[253px] xl:flex xl:justify-center xl:pb-2 group">
-      <img src={imgSrc} alt="image" loading="lazy" />
+    <div className="relative mx-auto w-full max-w-[350px] xl:max-w-[440px] xl:pb-2 2xl:max-w-[520px] group">
+      <img src={imgSrc} alt="image" loading="lazy" className="aspect-square w-full object-cover object-top" />
 
       <div className="xl:absolute xl:inset-0 xl:bg-black xl:opacity-0 xl:group-hover:opacity-50 xl:transition-opacity xl:duration-300" />
 

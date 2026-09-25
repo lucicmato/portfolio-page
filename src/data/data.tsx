@@ -6,6 +6,7 @@ import gerArticlesPractice from '../assets/images/ger-arcticles-practice.jpg';
 import fitPhisioLn from '../assets/images/FitPhisioLn.png';
 import logoSlatkoITocka from '../assets/images/logo-slatko-i-tocka.png';
 import logoBirchwood from '../assets/images/logo-birchwood.jpg';
+import logoFamilyApp from '../assets/images/logo-family-app.png';
 
 import { Technology } from '../models/Enums';
 import { Project } from '../models/Models';
@@ -77,6 +78,19 @@ export const otherStack: Technology[] = [
 ];
 
 export const projects: Project[] = [
+  {
+    src: logoFamilyApp,
+    name: 'Family App',
+    technology: [
+      Technology.NEXTJS,
+      Technology.REACTJS,
+      Technology.TYPESCRIPT,
+      Technology.TAILWIND,
+      Technology.SUPABASE,
+      Technology.VERCEL,
+    ],
+    codeLink: 'https://github.com/lucicmato/family-app',
+  },
   {
     src: portfolioPage,
     name: 'Portfolio Page',

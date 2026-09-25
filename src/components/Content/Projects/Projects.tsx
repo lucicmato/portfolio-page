@@ -24,20 +24,12 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
           <ProjectCard key={index}>
             <ProjectImg imgSrc={project.src} demoLink={project.projectDemoLink} codeLink={project.codeLink} />
             <ProjectInfo projectName={project.name} projectTechnology={project.technology} />
-            {project.projectDemoLink && (
-              <BaseButton
-                buttonText={BaseButtonText.VIEWPROJECT}
-                increaseCss="pt-5 pr-8 xl:hidden"
-                projectLink={project.projectDemoLink}
-              />
-            )}
-            {project.codeLink && (
-              <BaseButton
-                buttonText={BaseButtonText.VIEWCODE}
-                increaseCss="pt-5 pr-8 xl:hidden"
-                codeLink={project.codeLink}
-              />
-            )}
+            <div className="flex justify-center gap-8 pt-5 md:justify-start xl:hidden">
+              {project.projectDemoLink && (
+                <BaseButton buttonText={BaseButtonText.VIEWPROJECT} projectLink={project.projectDemoLink} />
+              )}
+              {project.codeLink && <BaseButton buttonText={BaseButtonText.VIEWCODE} codeLink={project.codeLink} />}
+            </div>
           </ProjectCard>
         ))}
       </div>
