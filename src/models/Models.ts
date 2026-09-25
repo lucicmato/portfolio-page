@@ -1,10 +1,5 @@
 import { Technology } from './Enums';
 
-export interface Experience {
-  name: string;
-  yearsOfExperience: number;
-}
-
 export interface Project {
   src: string;
   name: string;

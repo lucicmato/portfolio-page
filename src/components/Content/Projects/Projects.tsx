@@ -15,7 +15,7 @@ interface ProjectsProps {
 const Projects: React.FC<ProjectsProps> = ({ projects }) => {
   return (
     <section className="mt-20 pb-[6rem]">
-      <div className="flex justify-between">
+      <div className="flex items-center justify-between px-4 xl:px-0">
         <h2>Projects</h2>
         <BaseButton buttonText={BaseButtonText.CONTACTME} />
       </div>

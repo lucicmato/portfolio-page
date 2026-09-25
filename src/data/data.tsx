@@ -8,7 +8,7 @@ import logoSlatkoITocka from '../assets/images/logo-slatko-i-tocka.png';
 import logoBirchwood from '../assets/images/logo-birchwood.jpg';
 
 import { Technology } from '../models/Enums';
-import { Experience, Project } from '../models/Models';
+import { Project } from '../models/Models';
 
 export default {
   links: [
@@ -49,31 +49,31 @@ export default {
   },
 };
 
-export const experience: Experience[] = [
-  { name: Technology.JAVASCRIPT, yearsOfExperience: 7 },
-  { name: Technology.REACTJS, yearsOfExperience: 5 },
-  { name: Technology.NEXTJS, yearsOfExperience: 1 },
-  { name: Technology.ANGULARJS, yearsOfExperience: 2 },
-  { name: Technology.ANGULAR, yearsOfExperience: 0.5 },
-  { name: Technology.HTML, yearsOfExperience: 7 },
-  { name: Technology.CSS, yearsOfExperience: 7 },
-  { name: Technology.SCSS, yearsOfExperience: 7 },
-  { name: Technology.JAVA, yearsOfExperience: 2.5 },
-  { name: Technology.C, yearsOfExperience: 1 },
-  { name: Technology.VITE, yearsOfExperience: 2 },
-  { name: Technology.NODEJS, yearsOfExperience: 1.5 },
-  { name: Technology.EXPRESSJS, yearsOfExperience: 1.5 },
-  { name: Technology.TILEWIND, yearsOfExperience: 2 },
-  { name: Technology.BOOTSTRAP, yearsOfExperience: 1 },
-  { name: Technology.REACTBOOTSTRAP, yearsOfExperience: 0.5 },
-  { name: Technology.WORDPRESS, yearsOfExperience: 2 },
-  { name: Technology.ELEMENTOR, yearsOfExperience: 2 },
-  { name: Technology.FIGMA, yearsOfExperience: 5 },
-  { name: Technology.MATERIALUI, yearsOfExperience: 1 },
-  { name: Technology.DATABASES, yearsOfExperience: 3 },
-  { name: Technology.MONGODB, yearsOfExperience: 0.5 },
-  { name: Technology.MERN, yearsOfExperience: 0.5 },
-  { name: Technology.GIT, yearsOfExperience: 7 },
+export const coreStack: Technology[] = [
+  Technology.NEXTJS,
+  Technology.REACTJS,
+  Technology.TYPESCRIPT,
+  Technology.TAILWIND,
+  Technology.SUPABASE,
+  Technology.VERCEL,
+];
+
+export const otherStack: Technology[] = [
+  Technology.JAVASCRIPT,
+  Technology.NODEJS,
+  Technology.EXPRESSJS,
+  Technology.MONGODB,
+  Technology.ANGULAR,
+  Technology.ANGULARJS,
+  Technology.JAVA,
+  Technology.C,
+  Technology.SCSS,
+  Technology.VITE,
+  Technology.MATERIALUI,
+  Technology.BOOTSTRAP,
+  Technology.WORDPRESS,
+  Technology.FIGMA,
+  Technology.GIT,
 ];
 
 export const projects: Project[] = [
@@ -86,7 +86,7 @@ export const projects: Project[] = [
       Technology.HTML,
       Technology.SCSS,
       Technology.VITE,
-      Technology.TILEWIND,
+      Technology.TAILWIND,
     ],
     codeLink: 'https://github.com/lucicmato/portfolio-page',
   },
@@ -100,7 +100,7 @@ export const projects: Project[] = [
       Technology.HTML,
       Technology.JAVASCRIPT,
       Technology.REACTJS,
-      Technology.TILEWIND,
+      Technology.TAILWIND,
     ],
     projectDemoLink: 'https://birchwood-paintball-project-dml4n7iiz-mato-lucics-projects.vercel.app/',
     codeLink: 'https://github.com/lucicmato/birchwood-paintball-project',
@@ -132,7 +132,7 @@ export const projects: Project[] = [
       Technology.HTML,
       Technology.JAVASCRIPT,
       Technology.REACTJS,
-      Technology.TILEWIND,
+      Technology.TAILWIND,
     ],
     projectDemoLink: 'https://sweet-project-2j6wchowm-mato-lucics-projects.vercel.app/',
     codeLink: 'https://github.com/lucicmato/sweet-project',
