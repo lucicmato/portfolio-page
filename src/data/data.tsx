@@ -17,10 +17,35 @@ export default {
   ],
   representation: {
     developerName: 'Mato Lučić',
-    description:
-      'I am a passionate frontend/full-stack developer with a strong foundation in HTML, CSS, JavaScript (ReactJs/NextJs), Wordpress, Java and associated tools and technologies for application development.\n' +
-      'I graduated at the Faculty of Electrical Engineering with a degree in Computer Engineering. Most of my experience focuses on creating business applications and web pages. ' +
-      'I am a great problem solver. My passion is bringing websites and web applications to life with up-to-date technologies and best practices to create responsive, and user-friendly interfaces. ',
+    // Previous description,(kept for reference):
+    // description:
+    //   'I am a passionate frontend/full-stack developer with a strong foundation in HTML, CSS, JavaScript (ReactJs/NextJs), Wordpress, Java and associated tools and technologies for application development.\n' +
+    //   'I graduated at the Faculty of Electrical Engineering with a degree in Computer Engineering. Most of my experience focuses on creating business applications and web pages. ' +
+    //   'I am a great problem solver. My passion is bringing websites and web applications to life with up-to-date technologies and best practices to create responsive, and user-friendly interfaces. ',
+    description: (
+      <>
+        <p>
+          Full-Stack React / Next.js developer with a degree in Computer Engineering from the Faculty of Electrical
+          Engineering.
+        </p>
+        <p>
+          <b>
+            I build production-ready web applications for people, small teams and startups — focused on clean
+            architecture, practical solutions and good user experience.
+          </b>
+        </p>
+        <p>
+          <b>
+            I help clients get exactly what they need, without unnecessary complexity. Lately I’ve been working a lot
+            with modern Next.js apps and practical AI integrations.
+          </b>
+        </p>
+        <p>
+          <u className="decoration-green underline-offset-4">Main stack</u>: Next.js (App Router), TypeScript, Supabase, Tailwind CSS,
+          Vercel.
+        </p>
+      </>
+    ),
   },
 };
 
